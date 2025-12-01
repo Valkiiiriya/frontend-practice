@@ -1,0 +1,43 @@
+:root {
+  --space-2: 16px;
+  --space-3: 24px;
+}
+body {
+  font-family: system-ui, Arial, sans-serif;
+  margin: 0;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--space-2);
+}
+.header,
+.hero,
+.about,
+.skills,
+.projects,
+.contact {
+  padding: var(--space-3) 0;
+}
+.grid {
+  display: grid;
+  gap: var(--space-3);
+}
+@media (min-width: 768px) {
+  .about .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  text-decoration: none;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 8px;
+}
+.btn--ghost {
+  background: transparent;
+  color: #2563eb;
+  border: 1px solid #2563eb;
+}
